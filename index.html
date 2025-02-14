@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="main-content">
+        <!--<div class="profile-image">
+            <form class="image" id="form-form">
+                <div class="image-upload box">
+                    <img id="image-preview" src="" class="w-100 h-100">
+                    <i class="bi bi-cloud-arrow-up"></i>
+                    <input id="image-field" type="file">
+                </div>
+            </form>
+        </div> -->
+    <div class="main__formulario">
+    <div class="campo">
+        <h1 id="titulo">Cadastro de Pets</h1>
+        <p id="subtitulo">Coloque as informações do pet</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="idade"><strong>Idade</strong></label>
+                <input type="text" name="idade" id="idade">
+            </div>
+
+        </fieldset>
+
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="peso"><strong>Peso</strong></label>
+            <input type="text" name="peso" id="peso" required>
+        </div>
+
+        <div class="campo">
+            <label for="email"><strong>Raça</strong></label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>Está com seu bichinho há muito tempo?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="Sim" checked>Sim
+            </label>
+            
+            <label>
+                <input type="radio" name="devweb" value="Não">Não
+            </label>
+        </div>
+
+            <br>
+        <div class="campo">
+            <label><strong>Ele é castrado?</strong></label>
+            <label>
+                <input type="radio" name="dev" value="Sim" checked>Sim
+            </label>
+
+            <label>
+                <input type="radio" name="dev" value="Não">Não
+            </label>
+        </div>
+        
+
+        <div class="campo__inf">
+            <label for="especie"><strong>Espécie</strong></label>
+            <select id="especie">
+                <option selected disable value="">--Selecione--</option>
+                <option>Cão</option>
+                <option>Gato</option>
+                <option>Pássaro</option>
+                <option>Réptil</option>
+                <option>Peixe</option>
+                <option>Roedor</option>
+                <option>Anfíbio</option>
+                <option>Outros</option>
+            </select>
+            <br>
+            <div class="campo__inf">
+                <label for="genero"><strong>Gênero</strong></label>
+                <select id="genero">
+                    <option selected disable value="">--Selecione--</option>
+                    <option>Fêmea</option>
+                    <option>Macho</option>
+                </select>
+            </div>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="cor"><strong>Cor do pet</strong></label>
+                <input type="text" name="cor" id="cor">
+            </div>
+            </fieldset>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Finalidade(Objetivo) do pet:</strong></label><br><br>
+                <input type="checkbox" id="finalidade1" name="finalidade1" value="Guia">
+                <label for="tecnologia1">Guia</label>
+                <input type="checkbox" id="finalidade2" name="finalidade2" value="Lazer">
+                <label for="tecnologia2">Lazer</label>
+                <input type="checkbox" id="finalidade3" name="finalidade3" value="Terapia">
+                <label for="tecnologia3">Terapia</label>
+                <input type="checkbox" id="finalidade4" name="finalidade4" value="Segurança">
+                <label for="tecnologia4">Segurança</label>
+                <input type="checkbox" id="finalidade5" name="finalidade5" value="Outros">
+                <label for="tecnologia5">Outros</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Nos conte um pouco sobre seu pet!</strong></label>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="button" type="submit"><strong>Concluido</strong></button>
+
+    </form>
+</div>
+</div>
+</main>
+</body>
+</html>
